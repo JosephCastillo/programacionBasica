@@ -8,6 +8,70 @@
 <link rel="icon" href="imagenes/favicon.png" type="img/png" sizes="16x16">
 </head>
 <body>
-
+	<section>
+		<h1>Contactanos</h1>
+		<form name="formulario"	method="get" action="procesar.php">
+			<p>
+				<label for="nombre" maxlength="10">Nombre:</label>
+				<input type="text" name="nombre">
+			</p>
+			<p>
+				<label for="edad">Edad:</label>
+				<input type="number" name="edad">
+			</p>
+			<p>
+				<label for="email">Email:</label>
+				<input type="email" name="email">
+			</p>
+			<p>
+				<label for="telefono" min="13" max="100">Telefono:</label>
+				<input type="tel" name="telefono">
+			</p>
+			<p>
+				<label><input type="radio" name="edad" value="15" checked>15 años</label>
+			</p>
+			<p>
+				<label><input type="radio" name="edad" value="30" checked>30 años</label>
+			</p>
+			<p>
+				<label><input type="radio" name="edad" value="50" checked>50 años</label>
+			</p>
+			<p>
+				<label><input type="date" name="date" value="2018-02-05" checked></label>
+			</p>
+			<p>
+				<label><input type="color" name="miColor" value="#99BB00" checked></label>
+			</p>
+			<p>
+				<label for="mensaje">Tu mensaje:</label>
+				<p contenteditable="true" id="mensaje">Escribe aquí tu comentario</p>
+			</p>
+			<p>
+				<label for="pagina">Página:</label>
+				<input type="url" name="pagina">
+			</p>
+			<p>
+				<input type="submit" name="enviar" value="Enviar">	
+			</p>
+			<p>
+				<datalist id="datos">
+					<option value="123123123" label="Teléfono 1">
+					<option value="456456456" label="Teléfono 2">
+				</datalist>
+				<p>
+					<label>Teléfono: <input type="tel" name="telefono"list="datos"></label>
+				</p>
+			</p>
+			<p>
+				<input type="image" src="boton_enviar.png" width="200">
+			</p>
+			<p>
+				<progress value="5" max="100">0%</progress>
+			</p>
+			<p>
+				<meter value="60" min="0" max="100" low="40" high="80" optimum="100">60</meter>
+			</p>
+		</form>
+	</section>
 </body>
 </html>
